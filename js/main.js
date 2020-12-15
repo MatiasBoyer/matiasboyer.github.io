@@ -53,6 +53,7 @@ function abrirProyecto(nombre, descripcion, links, lenguajes)
     document.getElementById('modal-wrapper').style.display='block';
     document.getElementById('proj_oname').innerHTML = nombre;
     document.getElementById('proj_odesc').innerHTML = descripcion;
-    document.getElementById('proj_ourls').value = links;
+    document.getElementById('proj_ourls').innerHTML = links;
+    document.getElementById('proj_ourls').href = links;
     document.getElementById('proj_olang').value = "Lenguajes utilizados: " + lenguajes;
 }
